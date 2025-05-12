@@ -7,11 +7,25 @@ function App() {
 
   const ortalama = (vize1 + vize2) / 2;
 
+  let isimler = ["Derya", "Harun", "Sevda", "Derin", "Name"];
+
   return (
     <div>
       <p>Ogrenci ortalamasi : {ortalama}</p>
 
-      {ortalama >= 50 ? <p>Gectiniz </p> : <p>Kaldiniz</p>}
+      {/* {ortalama >= 50 ? <p>Gectiniz </p> : <p>Kaldiniz</p>} */}
+      {isimler.map((isim, index) => (
+        <div
+          style={{
+            border: "2px solid red",
+            backgroundColor: "grey",
+            fontSize: "32px",
+          }}
+          key={index}
+        >
+          {isim}
+        </div>
+      ))}
     </div>
   );
 }
