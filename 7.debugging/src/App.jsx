@@ -6,20 +6,20 @@ function App() {
   const [vize2, setVize2] = useState(0);
 
   const ortalamaBul = ()=>{
-    debugger
+    // debugger
     const toplamSonuc = topla()/2;
     yazdir(toplamSonuc);
 
   }
 
   const topla = ()=>{
-    debugger
+    // debugger
    const toplam =  vize1 + vize2;
    return toplam;
   }
 
   const yazdir = (sonuc) => {
-    debugger
+    // debugger
     console.log("Ortalama :" + sonuc);
   };
 
