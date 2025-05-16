@@ -6,11 +6,12 @@ function Course({ course }) {
   return (
     <div className="course">
       <div>
-        <img src={image} />
-        <h4>{title}</h4>
-        <h5>{description}</h5>
-        <h3>{price}</h3>
-        
+        <img className="img" src={image} />
+        <div className="info">
+          <h4>{title}</h4>
+          <h5>{description}</h5>
+          <h3 className="price" >{price} $</h3>
+        </div>
       </div>
     </div>
   );

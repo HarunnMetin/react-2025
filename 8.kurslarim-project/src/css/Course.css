@@ -1,0 +1,25 @@
+.course-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+.course .img {
+  width: 350px;
+  border-radius: 20px;
+  border: 3px solid grey;
+}
+.course .info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    
+   
+}
+.course .price{
+    color: red;
+}
