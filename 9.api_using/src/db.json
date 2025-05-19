@@ -2,8 +2,8 @@
   "users": [
     {
       "id": "1",
-      "username": "user451",
-      "password": "893512"
+      "username": "aaaaaa",
+      "password": "0000000"
     },
     {
       "id": "2",
@@ -49,56 +49,6 @@
       "id": "10",
       "username": "codeBlaze",
       "password": "102938"
-    },
-    {
-      "id": 12,
-      "username": "Succes000777",
-      "password": "340245"
-    },
-    {
-      "id": 12,
-      "username": "Succes000777",
-      "password": "340245"
-    },
-    {
-      "id": 12,
-      "username": "Succes000777",
-      "password": "340245"
-    },
-    {
-      "id": 12,
-      "username": "Succes000777",
-      "password": "340245"
-    },
-    {
-      "id": 12,
-      "username": "Succes000777",
-      "password": "340245"
-    },
-    {
-      "id": 12,
-      "username": "Succes000777",
-      "password": "340245"
-    },
-    {
-      "id": 12,
-      "username": "Succes000777",
-      "password": "340245"
-    },
-    {
-      "id": 12,
-      "username": "Succes000777",
-      "password": "340245"
-    },
-    {
-      "id": 12,
-      "username": "Succes000777",
-      "password": "340245"
-    },
-    {
-      "id": 12,
-      "username": "Succes000777",
-      "password": "340245"
     }
   ]
 }
