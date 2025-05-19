@@ -1,16 +1,29 @@
+import axios from "axios";
+import "./App.css";
+import { useEffect } from "react";
 
-import './App.css'
+const Base_Url = "http://localhost:3001";
 
 function App() {
-  
-  return(
+  const getAllUsers = async () => {
+    const response = await axios.get(Base_Url + "/users");
+    console.log(response.data);
+    
+  };
 
-    <div>
-      
-    </div>
-  )
+  const getUserById = async(userId) =>{
 
-  
+    const response = await axios.get(Base_Url + "/users/" + userId)
+    console.log(response.data);
+    
+  }
+
+  useEffect(()=>{
+    getAllUsers()
+    getUserById(2)
+  },[])
+
+  return <div></div>;
 }
 
-export default App
+export default App;
