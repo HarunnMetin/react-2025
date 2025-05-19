@@ -8,20 +8,36 @@ function App() {
   const getAllUsers = async () => {
     const response = await axios.get(Base_Url + "/users");
     console.log(response.data);
-    
   };
 
-  const getUserById = async(userId) =>{
-
-    const response = await axios.get(Base_Url + "/users/" + userId)
+  const getUserById = async (userId) => {
+    const response = await axios.get(Base_Url + "/users/" + userId);
     console.log(response.data);
+  };
+
+  const createUsers = async (newUser) => {
+    const response = await axios.post(`${Base_Url}/users`, newUser);
+
+    console.log("Response", response.data);
+  };
+
+
+  const updateUser = async(userId ,updateUser) =>{
+
     
   }
 
-  useEffect(()=>{
-    getAllUsers()
-    getUserById(2)
-  },[])
+  useEffect(() => {
+    getAllUsers();
+    getUserById(2);
+
+    const newUser = {
+      id: 12,
+      username: "Succes000777",
+      password: "340245",
+    };
+    createUsers(newUser);
+  }, []);
 
   return <div></div>;
 }
